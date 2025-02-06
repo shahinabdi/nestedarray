@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#212529">
+        Nested Array Structure
+    </text>
+
+    <!-- Main outer array container -->
+    <rect x="50" y="70" width="700" height="80" fill="none" stroke="#495057" stroke-width="2"/>
+    <text x="60" y="95" font-size="14" fill="#495057">Main Array (size: n)</text>
+
+    <!-- Inner arrays -->
+    <g transform="translate(80,80)">
+        <!-- First inner array -->
+        <rect x="0" y="20" width="120" height="40" fill="#e9ecef" stroke="#339af0" stroke-width="2"/>
+        <text x="60" y="45" text-anchor="middle" font-size="12" fill="#495057">Inner Array 0</text>
+        
+        <!-- Second inner array -->
+        <rect x="140" y="20" width="120" height="40" fill="#e9ecef" stroke="#339af0" stroke-width="2"/>
+        <text x="200" y="45" text-anchor="middle" font-size="12" fill="#495057">Inner Array 1</text>
+        
+        <!-- Ellipsis -->
+        <text x="290" y="40" font-size="20" fill="#495057">...</text>
+        
+        <!-- Last inner array -->
+        <rect x="340" y="20" width="120" height="40" fill="#e9ecef" stroke="#339af0" stroke-width="2"/>
+        <text x="400" y="45" text-anchor="middle" font-size="12" fill="#495057">Inner Array n-1</text>
+    </g>
+
+    <!-- Detail view of inner array -->
+    <g transform="translate(50,200)">
+        <!-- Title for detail view -->
+        <text x="350" y="20" text-anchor="middle" font-size="16" font-weight="bold" fill="#212529">
+            Detail: Inner Array Structure (size: 100)
+        </text>
+        
+        <!-- Detailed inner array -->
+        <rect x="0" y="40" width="700" height="60" fill="#e9ecef" stroke="#339af0" stroke-width="2"/>
+        
+        <!-- Elements -->
+        <rect x="10" y="50" width="40" height="40" fill="white" stroke="#339af0"/>
+        <text x="30" y="75" text-anchor="middle" font-size="12" fill="#495057">0</text>
+        
+        <rect x="60" y="50" width="40" height="40" fill="white" stroke="#339af0"/>
+        <text x="80" y="75" text-anchor="middle" font-size="12" fill="#495057">1</text>
+        
+        <rect x="110" y="50" width="40" height="40" fill="white" stroke="#339af0"/>
+        <text x="130" y="75" text-anchor="middle" font-size="12" fill="#495057">2</text>
+        
+        <text x="170" y="75" font-size="20" fill="#495057">...</text>
+        
+        <rect x="210" y="50" width="40" height="40" fill="white" stroke="#339af0"/>
+        <text x="230" y="75" text-anchor="middle" font-size="12" fill="#495057">98</text>
+        
+        <rect x="260" y="50" width="40" height="40" fill="white" stroke="#339af0"/>
+        <text x="280" y="75" text-anchor="middle" font-size="12" fill="#495057">99</text>
+    </g>
+
+    <!-- Memory notes -->
+    <g transform="translate(50,320)">
+        <text x="0" y="20" font-size="14" fill="#495057">Memory Layout Notes:</text>
+        <text x="20" y="40" font-size="12" fill="#495057">• C++: Contiguous memory blocks for better cache performance</text>
+        <text x="20" y="60" font-size="12" fill="#495057">• Python: Reference-based array with overhead per element</text>
+    </g>
+</svg>
