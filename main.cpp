@@ -28,7 +28,7 @@ void process_large_array(const size_t size) {
 }
 
 int main() {
-    std::vector<size_t> sizes = {1000000, 10000000, 100000000};
+    std::vector<size_t> sizes = {10000, 100000, 1000000};
     
     for (const auto& size : sizes) {
         std::cout << "\nTesting with array size: " << size << std::endl;
